@@ -1,0 +1,18 @@
+{
+  // F5: compila il file .c aperto e lo avvia nel debugger
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Esegui file corrente (debug)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "windows": {
+        "program": "${fileDirname}/${fileBasenameNoExtension}.exe"
+      },
+      "cwd": "${fileDirname}",
+      "terminal": "integrated",
+      "preLaunchTask": "compila"
+    }
+  ]
+}

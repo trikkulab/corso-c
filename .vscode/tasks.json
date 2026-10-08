@@ -1,0 +1,34 @@
+{
+  // Ctrl+Shift+B (Windows) / Cmd+Shift+B (Mac): compila il file .c aperto
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compila",
+      "type": "shell",
+      "command": "clang",
+      "args": [
+        "-g",
+        "-Wall",
+        "-Wextra",
+        "-std=c17",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "windows": {
+        "args": [
+          "-g",
+          "-Wall",
+          "-Wextra",
+          "-std=c17",
+          "${file}",
+          "-o",
+          "${fileDirname}/${fileBasenameNoExtension}.exe"
+        ]
+      },
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "clear": true },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

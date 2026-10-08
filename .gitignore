@@ -1,0 +1,24 @@
+# Eseguibili e file di debug generati
+*.exe
+*.pdb
+*.dSYM/
+*.o
+*.out
+
+# Eseguibili senza estensione (Mac): in esempi/ ed esercizi/ tieni solo sorgenti e cartelle
+esempi/**/*
+!esempi/**/
+!esempi/**/*.c
+!esempi/**/*.h
+!esempi/**/*.txt
+!esempi/**/*.md
+
+esercizi/**/*
+!esercizi/**/
+!esercizi/**/*.c
+!esercizi/**/*.h
+!esercizi/**/*.txt
+!esercizi/**/*.md
+
+.cache/
+.DS_Store

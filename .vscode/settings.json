@@ -1,0 +1,21 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  // Evita conflitti se è installata anche l'estensione Microsoft C/C++
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "clangd.arguments": [
+    "--header-insertion=never"
+  ],
+  // Niente suggerimenti grigi dentro il codice (es. "format:" davanti alla stringa di scanf)
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  // Nasconde gli eseguibili e i file di debug generati dalla compilazione
+  "files.exclude": {
+    "**/*.exe": true,
+    "**/*.pdb": true,
+    "**/*.dSYM": true
+  },
+  // Su Windows i programmi compilati girano meglio nel terminale PowerShell
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}
