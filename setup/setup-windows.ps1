@@ -39,8 +39,8 @@ if (($userPath -split ";") -notcontains $bin) {
 }
 $env:Path = "$env:Path;$bin"
 
-Write-Host "== 3/3 Creo il profilo VS Code 'Corso C' con le estensioni ==" -ForegroundColor Cyan
-$profilo = "Corso C"
+Write-Host "== 3/3 Creo il profilo VS Code 'Corso Info' con le estensioni ==" -ForegroundColor Cyan
+$profilo = "Corso Info"
 $corso = Split-Path $PSScriptRoot -Parent
 $hasCode = [bool](Get-Command code -ErrorAction SilentlyContinue)
 if ($hasCode) {

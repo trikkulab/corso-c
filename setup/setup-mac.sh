@@ -15,7 +15,7 @@ else
     exit 0
 fi
 
-PROFILO="Corso C"
+PROFILO="Corso Info"
 CORSO="$(cd "$(dirname "$0")/.." && pwd)"
 
 echo "== 2/2 Profilo VS Code \"$PROFILO\" con le estensioni =="

@@ -25,12 +25,12 @@ Scaricalo da <https://code.visualstudio.com> e installalo.
    aspetta la fine e rilancia lo stesso comando.
 
 ### 3. Apri la cartella in VS Code
-Durante l'installazione lo script apre da solo VS Code sulla cartella `Corso-C`, usando il **profilo "Corso C"**:
+Durante l'installazione lo script apre da solo VS Code sulla cartella `Corso-C`, usando il **profilo "Corso Info"**:
 un profilo separato che contiene solo le estensioni del corso, così il tuo VS Code normale resta com'è.
 Il nome del profilo attivo si vede in basso a sinistra (icona dell'ingranaggio).
 
 Le volte successive basta aprire la cartella (*File → Apri cartella…* → `Corso-C`):
-VS Code si ricorda di usare il profilo "Corso C".
+VS Code si ricorda di usare il profilo "Corso Info".
 
 Se lo script non è riuscito a creare il profilo (comando `code` non trovato), apri la cartella a mano
 e, quando VS Code propone di installare le estensioni consigliate (**clangd** e **CodeLLDB**), clicca **Installa**.
