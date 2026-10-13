@@ -7,7 +7,7 @@ Ambiente di lavoro per programmare in C con VS Code, uguale su Windows e Mac.
 ### 1. Installa VS Code
 Scaricalo da <https://code.visualstudio.com> e installalo.
 
-### 2. Installa il compilatore
+### 2. Installa il compilatore e Git
 
 **Windows**
 1. Apri la cartella `Corso-C`, poi la cartella `setup`.

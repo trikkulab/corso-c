@@ -1,10 +1,10 @@
 #!/bin/bash
-# Installa il compilatore C (Xcode Command Line Tools) e le estensioni di VS Code.
+# Installa il compilatore C e Git (Xcode Command Line Tools) e le estensioni di VS Code.
 #
 # Uso, dal Terminale nella cartella Corso-C:
 #   bash setup/setup-mac.sh
 
-echo "== 1/2 Strumenti di sviluppo Apple (clang, lldb) =="
+echo "== 1/2 Strumenti di sviluppo Apple (clang, lldb, git) =="
 if xcode-select -p >/dev/null 2>&1; then
     echo "Già installati."
 else
