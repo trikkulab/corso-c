@@ -1,6 +1,6 @@
 # Corso di C
 
-Ambiente di lavoro per programmare in C con VS Code, uguale su Windows e Mac.
+Ambiente di lavoro per programmare in C con VS Code, uguale su Windows, Mac e Linux.
 
 ## Installazione (una volta sola)
 
@@ -24,6 +24,14 @@ Scaricalo da <https://code.visualstudio.com> e installalo.
 3. Se si apre una finestra che chiede di installare gli strumenti di sviluppo, clicca **Installa**,
    aspetta la fine e rilancia lo stesso comando.
 
+**Linux** (Ubuntu/Debian/Mint, Fedora, Arch, openSUSE)
+1. Apri il Terminale nella cartella `Corso-C`.
+2. Scrivi:
+   ```
+   bash setup/setup-linux.sh
+   ```
+3. Inserisci la tua password quando richiesta (serve per installare i pacchetti).
+
 ### 3. Apri la cartella in VS Code
 Durante l'installazione lo script apre da solo VS Code sulla cartella `Corso-C`, usando il **profilo "Corso Info"**:
 un profilo separato che contiene solo le estensioni del corso, così il tuo VS Code normale resta com'è.
@@ -37,7 +45,7 @@ e, quando VS Code propone di installare le estensioni consigliate (**clangd** e 
 
 ## Come si usa
 
-| Cosa vuoi fare | Windows | Mac |
+| Cosa vuoi fare | Windows / Linux | Mac |
 |---|---|---|
 | Compilare ed eseguire (con debug) | `F5` | `F5` (o `Fn+F5`) |
 | Solo compilare | `Ctrl+Shift+B` | `Cmd+Shift+B` |
@@ -70,6 +78,6 @@ apri quello che vuoi provare e premi `F5`.
 - **`clang` non è riconosciuto** (Windows): chiudi e riapri VS Code dopo l'installazione.
   Se non basta, riavvia il computer.
 - **`stdio.h` sottolineato in rosso**: VS Code non trova clangd. Su Windows riapri VS Code
-  dopo l'installazione; su Mac accetta la proposta di scaricare clangd.
+  dopo l'installazione; su Mac e Linux accetta la proposta di scaricare clangd.
 - **Il programma non si ferma sul breakpoint**: controlla di aver premuto `F5`
   e non il pulsante "Run" di altre estensioni.
